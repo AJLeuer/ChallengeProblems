@@ -13,6 +13,7 @@
       <e p="ChallengeProblems" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="ChallengeProblems.csproj" t="IncludeRecursive" />
+        <e p="ChallengeProblems.csproj.DotSettings" t="Include" />
         <e p="Maths.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
