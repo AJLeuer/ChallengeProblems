@@ -12,7 +12,18 @@ namespace ChallengeProblems
 		/// <returns>The factorial of n</returns>
 		public static int Factorial(int n)
 		{
-			throw new Exception("Factorial() doesn't do anything yet!");
+			if (n == 0)
+			{
+				return 0;
+			}
+			else if (n == 1)
+			{
+				return 1;
+			}
+			else
+			{
+				return n * (Factorial(n - 1));
+			}
 		}
 		
 		/// <param name="numbers">The integers to be averaged</param>
