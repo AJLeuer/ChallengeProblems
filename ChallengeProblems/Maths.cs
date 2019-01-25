@@ -36,7 +36,14 @@ namespace ChallengeProblems
 		/// <returns>The result of raising n to the power given by the power argument</returns>
 		public static int RaiseToPower(int n, int power)
 		{
-			throw new Exception("RaiseToPower() doesn't do anything yet!");
+			int result = 1;
+
+			for (int i = 0; i < power; i++)
+			{
+				result = result * n;
+			}
+
+			return result;
 		}
 	}
 }

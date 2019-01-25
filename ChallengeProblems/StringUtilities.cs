@@ -83,7 +83,15 @@ namespace ChallengeProblems
 		/// <returns>The reverse of word</returns>
 		public static String Reverse(String word)
 		{
-			throw new Exception("Reverse() doesn't do anything yet!");
+			StringBuilder reverseWordBuilder = new StringBuilder();
+
+			for (int i = 0; i < word.Length; i++)
+			{
+				char c = word[word.Length - 1 - i];
+				reverseWordBuilder.Append(c);
+			}
+
+			return reverseWordBuilder.ToString();
 		}
 		
 		/// <summary>
