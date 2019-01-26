@@ -30,7 +30,16 @@ namespace ChallengeProblems
 		/// <returns>The average of all the integers in numbers</returns>
 		public static float Average(List<int> numbers)
 		{
-			throw new Exception("Average() doesn't do anything yet!");
+			int sum = 0;
+			
+			foreach (int number in numbers)
+			{
+				sum += number;
+			}
+
+			float average = sum / (float) numbers.Count;
+
+			return average;
 		}
 
 		/// <returns>The result of raising n to the power given by the power argument</returns>
