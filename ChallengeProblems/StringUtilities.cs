@@ -102,7 +102,19 @@ namespace ChallengeProblems
 		/// <returns>The input string with all vowels removed</returns>
 		public static String RemoveVowels(String word)
 		{
-			throw new Exception("RemoveVowels() doesn't do anything yet!");			
+			var vowels = new List<char>{'a', 'e', 'i', 'o', 'u'};
+			
+			var vowelFreeWordBuilder = new StringBuilder();
+
+			foreach (char character in word)
+			{
+				if (vowels.Contains(Char.ToLower(character)) == false)
+				{
+					vowelFreeWordBuilder.Append(character);
+				}
+			}
+
+			return vowelFreeWordBuilder.ToString();
 		}
 		
 		/// <summary></summary>
